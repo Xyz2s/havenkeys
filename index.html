@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Havenkeys Roofing Co. — Built to Shed Everything the Sky Throws</title>
+<meta name="description" content="Havenkeys Roofing Co. installs and repairs asphalt, metal, and slate roofs. Licensed, insured, and on-call for storm damage across the county.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Storm alert banner -->
+<div class="storm-banner" id="stormBanner">
+  <p><span class="storm-dot" aria-hidden="true"></span> Storm response crews are on standby this week — same-day tarping available. <a href="#contact">Request emergency service →</a></p>
+  <button class="storm-close" id="stormClose" aria-label="Dismiss storm alert">✕</button>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M17 1L33 15H27V29H21V19H13V29H7V15H1L17 1Z" fill="currentColor"/>
+      </svg>
+      <span>Havenkeys</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#courses">Process</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+15551234567" class="header-phone">(555) 123-4567</a>
+      <a href="#contact" class="btn btn-copper header-cta">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Licensed · Insured · Family-Run Since 1998</p>
+        <h1>Built to shed<br><span class="hero-accent">everything</span><br>the sky throws.</h1>
+        <p class="hero-sub">Havenkeys installs, repairs, and inspects roofs the way we'd want ours done — one course at a time, flashed tight, and backed by a warranty that actually means something.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-copper btn-lg">Get a Free Inspection</a>
+          <a href="tel:+15551234567" class="btn btn-outline btn-lg">Call (555) 123-4567</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-num">4.9<span class="trust-star">★</span></span>
+            <span class="trust-label">Average rating<br>612 reviews</span>
+          </div>
+          <div class="trust-div" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-num">1,200+</span>
+            <span class="trust-label">Roofs<br>completed</span>
+          </div>
+          <div class="trust-div" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-num">25yr</span>
+            <span class="trust-label">Workmanship<br>warranty</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 420" class="roof-svg" id="roofSvg">
+          <!-- sky -->
+          <rect x="0" y="0" width="480" height="420" fill="none"/>
+          <!-- ridge beam -->
+          <line x1="30" y1="150" x2="450" y2="150" class="ridge-line"/>
+          <!-- roof deck triangle outline -->
+          <path d="M240 40 L460 160 L460 380 L20 380 L20 160 Z" class="deck-outline" fill="none"/>
+          <!-- rafters -->
+          <g class="rafters">
+            <line x1="90" y1="192" x2="90" y2="380"/>
+            <line x1="160" y1="150" x2="160" y2="380"/>
+            <line x1="240" y1="118" x2="240" y2="380"/>
+            <line x1="320" y1="150" x2="320" y2="380"/>
+            <line x1="390" y1="192" x2="390" y2="380"/>
+          </g>
+          <!-- shingle courses, animated in sequence bottom to top -->
+          <g class="shingle-courses" id="shingleCourses">
+            <!-- course 6 (bottom) -->
+            <g class="course" style="--d:0s">
+              <rect x="20" y="335" width="60" height="45" class="tile tile-a"/>
+              <rect x="80" y="335" width="60" height="45" class="tile tile-b"/>
+              <rect x="140" y="335" width="60" height="45" class="tile tile-a"/>
+              <rect x="200" y="335" width="60" height="45" class="tile tile-b"/>
+              <rect x="260" y="335" width="60" height="45" class="tile tile-a"/>
+              <rect x="320" y="335" width="60" height="45" class="tile tile-b"/>
+              <rect x="380" y="335" width="60" height="45" class="tile tile-a"/>
+            </g>
+            <g class="course" style="--d:0.12s">
+              <rect x="20" y="293" width="60" height="45" class="tile tile-b"/>
+              <rect x="80" y="293" width="60" height="45" class="tile tile-a"/>
+              <rect x="140" y="293" width="60" height="45" class="tile tile-b"/>
+              <rect x="200" y="293" width="60" height="45" class="tile tile-a"/>
+              <rect x="260" y="293" width="60" height="45" class="tile tile-b"/>
+              <rect x="320" y="293" width="60" height="45" class="tile tile-a"/>
+              <rect x="380" y="293" width="60" height="45" class="tile tile-b"/>
+            </g>
+            <g class="course" style="--d:0.24s">
+              <rect x="20" y="251" width="60" height="45" class="tile tile-a"/>
+              <rect x="80" y="251" width="60" height="45" class="tile tile-b"/>
+              <rect x="140" y="251" width="60" height="45" class="tile tile-a"/>
+              <rect x="200" y="251" width="60" height="45" class="tile tile-b"/>
+              <rect x="260" y="251" width="60" height="45" class="tile tile-a"/>
+              <rect x="320" y="251" width="60" height="45" class="tile tile-b"/>
+              <rect x="380" y="251" width="60" height="45" class="tile tile-a"/>
+            </g>
+            <g class="course" style="--d:0.36s">
+              <rect x="40" y="209" width="60" height="45" class="tile tile-b"/>
+              <rect x="100" y="209" width="60" height="45" class="tile tile-a"/>
+              <rect x="160" y="209" width="60" height="45" class="tile tile-b"/>
+              <rect x="220" y="209" width="60" height="45" class="tile tile-a"/>
+              <rect x="280" y="209" width="60" height="45" class="tile tile-b"/>
+              <rect x="340" y="209" width="60" height="45" class="tile tile-a"/>
+            </g>
+            <g class="course" style="--d:0.48s">
+              <rect x="70" y="180" width="55" height="40" class="tile tile-a"/>
+              <rect x="125" y="180" width="55" height="40" class="tile tile-b"/>
+              <rect x="180" y="180" width="55" height="40" class="tile tile-a"/>
+              <rect x="235" y="180" width="55" height="40" class="tile tile-b"/>
+              <rect x="290" y="180" width="55" height="40" class="tile tile-a"/>
+              <rect x="345" y="180" width="55" height="40" class="tile tile-b"/>
+            </g>
+            <g class="course" style="--d:0.6s">
+              <rect x="150" y="140" width="180" height="42" class="tile tile-b ridge-cap"/>
+            </g>
+          </g>
+          <!-- nail gun marker -->
+          <circle cx="240" cy="150" r="5" class="nail-point"/>
+        </svg>
+        <p class="visual-caption">Course by course. That's the whole trade.</p>
+      </div>
+    </div>
+    <div class="roofline-edge" aria-hidden="true"></div>
+  </section>
+
+  <!-- LOGO / TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="trust-strip-inner">
+      <span>Manufacturer-certified installer for</span>
+      <div class="brand-marks">
+        <span>GAF</span><span>Owens Corning</span><span>CertainTeed</span><span>Malarkey</span><span>DaVinci</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">What we install</p>
+      <h2 class="section-title">Six systems. One standard of tight, flat, and flashed right.</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 40h36M10 40V22l14-12 14 12v18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 40V26h20v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Asphalt Shingle</h3>
+          <p>Our bread-and-butter install — architectural or 3-tab, laid in staggered courses with ice-and-water shield at every eave.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 24l18-14 18 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 24v6l18 14 18-14v-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 30l18 14 18-14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Standing-Seam Metal</h3>
+          <p>Mechanically-seamed panels formed on site for a true custom fit. 50-year finish warranty, snow-load rated.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="12" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/><rect x="20" y="10" width="12" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/><rect x="32" y="10" width="8" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/><rect x="14" y="24" width="12" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/><rect x="26" y="24" width="12" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3>Slate &amp; Synthetic Tile</h3>
+          <p>Natural Vermont slate or engineered composite for period homes — hung one piece at a time with copper fasteners.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L8 14v10c0 11 7 17 16 20 9-3 16-9 16-20V14L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M18 24l4 5 8-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Storm &amp; Hail Repair</h3>
+          <p>Insurance-ready damage reports, tarp-over within hours, and full repair once your claim is approved.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/><path d="M24 16v8l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Roof Inspections</h3>
+          <p>A 38-point check on decking, flashing, ventilation and granule loss — with photos, not guesses.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 12h32M8 12c0 12 4 20 4 26a4 4 0 008 0V26h8v12a4 4 0 008 0c0-6 4-14 4-26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Gutters &amp; Flashing</h3>
+          <p>Seamless aluminum gutters and step/counter flashing sized to move water off — not into your walls.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="roofline-edge roofline-edge--dark" aria-hidden="true"></div>
+
+  <!-- PROCESS: THE COURSES -->
+  <section class="courses-section" id="courses">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-light">How the job runs</p>
+      <h2 class="section-title section-title--light">Roofers don't work in steps. We work in courses.</h2>
+      <p class="courses-intro">A "course" is one row of shingles, laid so it overlaps the row below it. That's also how we run a project — each stage covers and protects the one before it.</p>
+
+      <ol class="courses-list">
+        <li class="course-row">
+          <span class="course-num">Course 1</span>
+          <div class="course-body">
+            <h3>Walkthrough &amp; measure</h3>
+            <p>A crew lead climbs up, not just looks up — checking deck, slope, ventilation, and every penetration before we quote a single shingle.</p>
+          </div>
+        </li>
+        <li class="course-row">
+          <span class="course-num">Course 2</span>
+          <div class="course-body">
+            <h3>Tear-off &amp; deck check</h3>
+            <p>Old material comes off down to the sheathing. Any soft or rotted decking gets replaced before anything new goes back on — always itemized, never assumed.</p>
+          </div>
+        </li>
+        <li class="course-row">
+          <span class="course-num">Course 3</span>
+          <div class="course-body">
+            <h3>Underlayment &amp; flashing</h3>
+            <p>Ice-and-water shield at eaves and valleys, synthetic felt across the field, new step and counter flashing at every wall and chimney.</p>
+          </div>
+        </li>
+        <li class="course-row">
+          <span class="course-num">Course 4</span>
+          <div class="course-body">
+            <h3>Material install</h3>
+            <p>Shingles, panels, or tile go on in staggered courses to code and manufacturer spec — usually one to three days, weather depending.</p>
+          </div>
+        </li>
+        <li class="course-row">
+          <span class="course-num">Course 5</span>
+          <div class="course-body">
+            <h3>Final walk &amp; warranty</h3>
+            <p>We walk the roof and the yard with a magnetic nail sweep, then hand over your workmanship warranty and manufacturer registration.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="section-inner stats-inner">
+      <div class="stat">
+        <span class="stat-num" data-count="1200" data-suffix="+">0</span>
+        <span class="stat-label">Roofs completed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="25" data-suffix=" yr">0</span>
+        <span class="stat-label">Workmanship warranty</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="48" data-suffix=" hr">0</span>
+        <span class="stat-label">Storm response window</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="27" data-suffix="">0</span>
+        <span class="stat-label">Years in business</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / GALLERY -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">Recent installs</p>
+      <h2 class="section-title">Every roof tells you what the last one didn't.</h2>
+
+      <div class="work-grid">
+        <figure class="work-card work-card--tall">
+          <div class="work-swatch work-swatch--slate"></div>
+          <figcaption>
+            <h3>Ashworth County</h3>
+            <p>Standing-seam metal · Charcoal</p>
+          </figcaption>
+        </figure>
+        <figure class="work-card">
+          <div class="work-swatch work-swatch--copper"></div>
+          <figcaption>
+            <h3>Millbrook Farmhouse</h3>
+            <p>Architectural shingle · Weathered Wood</p>
+          </figcaption>
+        </figure>
+        <figure class="work-card">
+          <div class="work-swatch work-swatch--patina"></div>
+          <figcaption>
+            <h3>Cedar Falls Chapel</h3>
+            <p>Natural slate · Vermont Gray</p>
+          </figcaption>
+        </figure>
+        <figure class="work-card">
+          <div class="work-swatch work-swatch--rust"></div>
+          <figcaption>
+            <h3>Harlow Street Row</h3>
+            <p>Storm repair · 3 units, 6 days</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="roofline-edge" aria-hidden="true"></div>
+
+  <!-- TESTIMONIALS -->
+  <section class="reviews" id="reviews">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-dark">From the neighborhood</p>
+      <h2 class="section-title">What holds up isn't just the roof.</h2>
+
+      <div class="review-track" id="reviewTrack">
+        <article class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">They found rotted decking our last roofer never mentioned, showed us photos, and fixed it for less than we expected. Roof's been through two hailstorms since with zero leaks.</p>
+          <p class="review-name">Dana R. — Millbrook</p>
+        </article>
+        <article class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">Crew showed up when they said they would, cleaned the yard better than they found it, and the flashing work around our chimney finally stopped the drip we'd lived with for years.</p>
+          <p class="review-name">Marcus T. — Ashworth County</p>
+        </article>
+        <article class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">Called after a windstorm at 9pm and had a tarp crew out before midnight. Full repair was scheduled and finished within the week. Straightforward with the insurance paperwork too.</p>
+          <p class="review-name">Priya K. — Cedar Falls</p>
+        </article>
+        <article class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">We went with the standing-seam metal after they walked us through the snow-load numbers for our roof pitch specifically, not just a general pitch. Looks sharp, and January proved them right.</p>
+          <p class="review-name">Owen B. — Harlow Street</p>
+        </article>
+      </div>
+      <div class="review-dots" id="reviewDots"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-copy">
+        <p class="eyebrow eyebrow-light">Get started</p>
+        <h2 class="section-title section-title--light">Tell us what's over your head.</h2>
+        <p class="contact-sub">Send a few details and a crew lead will call within one business day — sooner if it's storm-related.</p>
+
+        <ul class="contact-list">
+          <li><strong>Call or text</strong><a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><strong>Email</strong><a href="mailto:hello@copperlineroofing.com">hello@copperlineroofing.com</a></li>
+          <li><strong>Service area</strong><span>Ashworth County &amp; surrounding townships</span></li>
+          <li><strong>Hours</strong><span>Mon–Sat, 7am–6pm · Storm line 24/7</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <span class="field-error">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            <span class="field-error">Please enter a phone number.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="field-error">Please enter a valid email.</span>
+        </div>
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select one</option>
+            <option>New roof install</option>
+            <option>Repair</option>
+            <option>Storm damage</option>
+            <option>Inspection</option>
+            <option>Gutters &amp; flashing</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-copper btn-lg btn-block">Request my quote</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo--footer">
+        <svg width="28" height="24" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 1L33 15H27V29H21V19H13V29H7V15H1L17 1Z" fill="currentColor"/>
+        </svg>
+        <span>Havenkeys</span>
+      </a>
+      <p>Roofing done course by course, since 1998.<br>License #RC-88213 · Fully insured &amp; bonded.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Asphalt Shingle</a>
+        <a href="#services">Standing-Seam Metal</a>
+        <a href="#services">Slate &amp; Tile</a>
+        <a href="#services">Storm Repair</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#courses">Our Process</a>
+        <a href="#work">Our Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Reach us</h4>
+        <a href="tel:+12176813569">(217) 681-3569</a>
+        <a href="mailto:annathomas11237@gmail.com">annathomas11237@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Havenkeys Roofing Co. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
